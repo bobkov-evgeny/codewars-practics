@@ -51,7 +51,7 @@ console.log(list([{ name: "Bart" }, { name: "Lisa" }]));
 */
 
 // (5 KYU) Moving Zeros To The End
-
+/*
 const moveZeros = function (arr) {
 	const zeroArr = [];
 	const numsArr = [];
@@ -68,3 +68,19 @@ const moveZeros = function (arr) {
 console.log(
 	moveZeros(["a","b","c","d",1,false,"a","l","s","e",1,3,1,9,"[","o","b","j","e","c","t",0,"O","b","j","e","c","t","]",9,0,0,0,0,0,0,0,0,0,0,])
 );
+*/
+
+// (6 KYU) Mexican Wave
+function wave(str) {
+	const result = [];
+	for (let i = 0; i < str.length; i++) {
+		if (str[i] !== " ")
+			result.push(
+				`${str.slice(0, i)}${str[i].toUpperCase()}${str.slice(i + 1)}`
+			);
+	}
+	return result;
+}
+
+wave(" gap ");
+// result = ["Hello", "hEllo", "heLlo", "helLo", "hellO"];
